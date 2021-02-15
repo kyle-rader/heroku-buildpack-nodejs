@@ -57,6 +57,9 @@ source "$BP_DIR/lib/yarn-2.sh"
 
 export PATH="$BUILD_DIR/.heroku/node/bin:$BUILD_DIR/.heroku/yarn/bin":$PATH
 
+## Update for Ember app in client/
+BUILD_DIR="$BUILD_DIR/client"
+
 LOG_FILE=$(mktemp -t node-build-log.XXXXX)
 echo "" > "$LOG_FILE"
 
